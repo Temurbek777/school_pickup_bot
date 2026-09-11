@@ -6,8 +6,8 @@ def get_main_menu_keyboard() -> ReplyKeyboardMarkup:
     return ReplyKeyboardMarkup(
         keyboard=[
             [KeyboardButton(text="🚗 Boryapman")],
-            [KeyboardButton(text="👨‍👩‍👧 Mening farzandlarim")],
-            [KeyboardButton(text="ℹ️ Help")]
+            [KeyboardButton(text="👨‍👩‍👧 Mening farzandim")],
+            [KeyboardButton(text="ℹ️ Yordam")]
         ],
         resize_keyboard=True
     )

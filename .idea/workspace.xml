@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f30324ea-f33b-4004-8f17-18e53f8fc330" name="Changes" comment="">
+    <list default="true" id="f30324ea-f33b-4004-8f17-18e53f8fc330" name="Changes" comment="FIrst Commit">
+      <change afterPath="$PROJECT_DIR$/app/bot/states/teacher.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/database/models/teacher.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/database/repositories/teacher_repo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/utils/helpers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/utils/texts.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/school_pickup_bot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/school_pickup_bot.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/bot/handlers/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/bot/handlers/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/bot/handlers/parent_child.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/bot/handlers/parent_child.py" afterDir="false" />
@@ -15,27 +19,12 @@
       <change beforePath="$PROJECT_DIR$/app/bot/keyboards/admin_kb.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/bot/keyboards/admin_kb.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/bot/keyboards/parent_kb.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/bot/keyboards/parent_kb.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/bot/middlewares/db_middleware.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/bot/middlewares/db_middleware.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bot/middlewares/user_middleware.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/bot/middlewares/user_middleware.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bot/states/edit_states.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/bot/states/edit_states.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bot/states/parent_states.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/bot/states/parent_states.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/logging.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/logging.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/database/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/database/models/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/models/base.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/database/models/child.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/models/child.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/database/models/enums.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/models/enums.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/database/models/parent.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/models/parent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/database/models/pickup.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/models/pickup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/database/repositories/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/repositories/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/database/repositories/child_repo.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/repositories/child_repo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/database/repositories/parent_repo.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/repositories/parent_repo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/database/repositories/pickup_repo.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/repositories/pickup_repo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/database/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/session.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/notification_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/notification_service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/services/pickup_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/pickup_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/user_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/user_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/bot/handlers/admin_teacher.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +171,43 @@
       <option name="presentableId" value="Default" />
       <updated>1788454533898</updated>
     </task>
+    <task id="LOCAL-00001" summary="FIrst Commit">
+      <option name="closed" value="true" />
+      <created>1788882907794</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1788882907794</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="FIrst Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="FIrst Commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -190,6 +215,10 @@
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$USER_HOME$/AppData/Local/Programs/Python/Python312/Lib/enum.py</url>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/bot/keyboards/parent_kb.py</url>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

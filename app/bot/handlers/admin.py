@@ -9,12 +9,12 @@ router = Router()
 
 
 @router.callback_query(F.data.startswith("adm_status_"))
-async def process_admin_status_change(callback: CallbackQuery, db: AsyncSession, bot: Bot):
+async def process_admin_status_change(callback: CallbackQuery, session: AsyncSession, bot: Bot):
     parts = callback.data.split("_")
     request_id = int(parts[2])
     new_status = PickupStatus(parts[3])
 
-    pickup_service = PickupService(db)
+    pickup_service = PickupService(session)
     notification_service = NotificationService(bot)
 
     updated_request, msg = await pickup_service.update_status(request_id, new_status)

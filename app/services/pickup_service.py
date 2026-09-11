@@ -26,7 +26,7 @@ class PickupService:
     async def create_pickup_request(
             self, telegram_id: int, child_id: int, eta_minutes: int
     ) -> Tuple[Optional[PickupRequest], str]:
-        """Creates a pickup request if child has no active pending/preparing/ready requests."""
+        """Creates a pickup request if child has no active pending/preparing/ready requests for today."""
         parent = await self.parent_repo.get_by_telegram_id(telegram_id)
         if not parent:
             return None, "User not registered."
@@ -35,8 +35,11 @@ class PickupService:
         if not child:
             return None, "Child record not found."
 
-        # Anti-spam: Check active requests
-        existing = await self.pickup_repo.get_active_request_by_child(child.id)
+        # 1. Kechadan qolib ketgan active so'rovlarni avtomatik EXPIRED qilish
+        await self.pickup_repo.expire_old_unhandled_requests(child.id)
+
+        # 2. Anti-spam: Faqat BUGUNGI active so'rovlarni tekshirish
+        existing = await self.pickup_repo.get_active_request_today_by_child(child.id)
         if existing:
             return None, f"{child.full_name} uchun so'rov yuborilgan ({existing.status.value})."
 

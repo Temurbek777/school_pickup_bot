@@ -11,7 +11,7 @@ class DbSessionMiddleware(BaseMiddleware):
         data: Dict[str, Any]
     ) -> Any:
         async with AsyncSessionLocal() as session:
-            data["db"] = session
+            data["session"] = session
             try:
                 result = await handler(event, data)
                 await session.commit()

@@ -7,3 +7,4 @@ class PickupStatus(str, enum.Enum):
     READY = "READY"
     COMPLETED = "COMPLETED"
     CANCELLED = "CANCELLED"
+    EXPIRED = "EXPIRED"
