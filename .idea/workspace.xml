@@ -4,27 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f30324ea-f33b-4004-8f17-18e53f8fc330" name="Changes" comment="FIrst Commit">
-      <change afterPath="$PROJECT_DIR$/app/bot/states/teacher.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/database/models/teacher.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/database/repositories/teacher_repo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/utils/helpers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/utils/texts.py" afterDir="false" />
+    <list default="true" id="f30324ea-f33b-4004-8f17-18e53f8fc330" name="Changes" comment="Second Commit">
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bot/handlers/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/bot/handlers/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bot/handlers/parent_child.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/bot/handlers/parent_child.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bot/handlers/pickup.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/bot/handlers/pickup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bot/keyboards/admin_kb.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/bot/keyboards/admin_kb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bot/keyboards/parent_kb.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/bot/keyboards/parent_kb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bot/middlewares/db_middleware.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/bot/middlewares/db_middleware.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/database/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/database/models/child.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/models/child.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/database/models/enums.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/models/enums.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/database/repositories/pickup_repo.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/repositories/pickup_repo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/pickup_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/pickup_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/bot/handlers/admin_teacher.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1788882907794</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Second Commit">
+      <option name="closed" value="true" />
+      <created>1789121460276</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1789121460277</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,7 +197,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="FIrst Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="FIrst Commit" />
+    <MESSAGE value="Second Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second Commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
