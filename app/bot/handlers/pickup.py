@@ -130,7 +130,7 @@ async def cancel_pickup_flow(callback: CallbackQuery, state: FSMContext):
 
 
 @router.message(F.text == "ℹ️ Yordam")
-async def help_button_handler(message: Message):
+async def help_button_handler(message: Message, state: FSMContext):
     await message.answer(
         text=HELP_TEXT,
         parse_mode=ParseMode.HTML
